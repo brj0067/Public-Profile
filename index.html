@@ -287,13 +287,18 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Brahma Raj Joshi. All rights reserved.</p>
-        </div>
-    </footer>
+   <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 
+            <span id="year"></span> Brahma Raj Joshi. All rights reserved.
+        </p>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<script>
+    // Auto-update footer year
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

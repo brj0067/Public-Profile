@@ -76,190 +76,102 @@
         </div>
     </section>
 
-    /* ===== Experience (World-class Timeline) ===== */
-.experience{
-  padding: 80px 0;
-  position: relative;
-  overflow: hidden;
-}
+   <!-- Experience Section -->
+<section id="experience" class="experience">
+  <div class="container">
+    <h2 class="section-title">Professional Experience</h2>
 
-/* subtle background glow */
-.experience::before{
-  content:"";
-  position:absolute;
-  inset:-200px -120px auto -120px;
-  height: 420px;
-  background: radial-gradient(closest-side, rgba(110,231,255,.14), transparent 70%),
-              radial-gradient(closest-side, rgba(167,139,250,.12), transparent 70%);
-  filter: blur(8px);
-  pointer-events:none;
-}
+    <div class="timeline">
 
-.timeline{
-  max-width: 980px;
-  margin: 30px auto 0;
-  position: relative;
-  padding-left: 34px;
-}
+      <div class="timeline-item current">
+        <div class="timeline-marker">
+          <span class="marker-dot"></span>
+          <span class="marker-pulse"></span>
+        </div>
 
-/* gradient vertical line */
-.timeline::before{
-  content:"";
-  position:absolute;
-  left: 14px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(
-    to bottom,
-    rgba(110,231,255,.0),
-    rgba(110,231,255,.55),
-    rgba(167,139,250,.55),
-    rgba(110,231,255,.0)
-  );
-}
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="job-title">Technical Support Officer</h3>
+              <span class="company">ITsutra</span>
+            </div>
 
-.timeline-item{
-  position: relative;
-  display: grid;
-  grid-template-columns: 28px 1fr;
-  gap: 18px;
-  padding: 14px 0;
-}
+            <div class="meta">
+              <span class="badge">Current</span>
+              <span class="duration">Jan 2024 — Present • 2 yrs 2 mos</span>
+            </div>
+          </div>
 
-.timeline-marker{
-  position: relative;
-  width: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 18px;
-}
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Kathmandu, Bagmati, Nepal</p>
+        </div>
+      </div>
 
-.marker-dot{
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgba(255,255,255,.92);
-  box-shadow: 0 0 0 5px rgba(110,231,255,.12),
-              0 0 18px rgba(110,231,255,.28);
-}
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <span class="marker-dot"></span>
+        </div>
 
-.timeline-item.current .marker-dot{
-  background: #6ee7ff;
-  box-shadow: 0 0 0 6px rgba(110,231,255,.18),
-              0 0 26px rgba(110,231,255,.45);
-}
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="job-title">Information Technology Engineer</h3>
+              <span class="company">Synergy IT Solution Pvt Ltd</span>
+            </div>
 
-.marker-pulse{
-  position:absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(110,231,255,.55);
-  top: 10px;
-  opacity: .9;
-  animation: pulse 1.6s ease-out infinite;
-}
+            <div class="meta">
+              <span class="duration">Feb 2023 — Mar 2024 • 1 yr 2 mos</span>
+            </div>
+          </div>
 
-@keyframes pulse{
-  0%{ transform: scale(.65); opacity: .85; }
-  100%{ transform: scale(1.35); opacity: 0; }
-}
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Nepal</p>
+        </div>
+      </div>
 
-.timeline-content{
-  border: 1px solid rgba(255,255,255,.10);
-  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-  border-radius: 16px;
-  padding: 18px 18px 16px;
-  backdrop-filter: blur(10px);
-  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-  position: relative;
-}
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <span class="marker-dot"></span>
+        </div>
 
-/* top accent line */
-.timeline-content::before{
-  content:"";
-  position:absolute;
-  left: 14px;
-  right: 14px;
-  top: 0;
-  height: 1px;
-  background: linear-gradient(90deg, rgba(110,231,255,.0), rgba(110,231,255,.55), rgba(167,139,250,.55), rgba(110,231,255,.0));
-  opacity: .9;
-}
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="job-title">Network Security Engineer</h3>
+              <span class="company">Thakral One Nepal</span>
+            </div>
 
-.timeline-item:hover .timeline-content{
-  transform: translateY(-2px);
-  border-color: rgba(110,231,255,.28);
-  box-shadow: 0 14px 30px rgba(0,0,0,.18);
-}
+            <div class="meta">
+              <span class="duration">Mar 2022 — Apr 2023 • 1 yr 2 mos</span>
+            </div>
+          </div>
 
-.timeline-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 14px;
-  flex-wrap: wrap;
-}
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Nepal</p>
+        </div>
+      </div>
 
-.job-title{
-  margin: 0;
-  font-size: 1.12rem;
-  letter-spacing: .2px;
-}
+      <div class="timeline-item">
+        <div class="timeline-marker">
+          <span class="marker-dot"></span>
+        </div>
 
-.company{
-  display: inline-block;
-  margin-top: 6px;
-  color: rgba(255,255,255,.72);
-  font-weight: 600;
-}
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="job-title">Technical Professional</h3>
+              <span class="company">Ugratara Infosys</span>
+            </div>
 
-.meta{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
+            <div class="meta">
+              <span class="duration">Feb 2020 — Feb 2022 • 2 yrs 1 mo</span>
+            </div>
+          </div>
 
-.duration{
-  color: rgba(255,255,255,.60);
-  font-size: .92rem;
-  white-space: nowrap;
-}
+          <p class="location"><i class="fas fa-map-marker-alt"></i> Banke District, Nepal</p>
+        </div>
+      </div>
 
-.badge{
-  font-size: .78rem;
-  font-weight: 700;
-  letter-spacing: .4px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid rgba(110,231,255,.35);
-  background: rgba(110,231,255,.10);
-  color: rgba(255,255,255,.90);
-}
-
-.location{
-  margin: 10px 0 0;
-  color: rgba(255,255,255,.62);
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.location i{
-  opacity: .85;
-}
-
-/* Responsive */
-@media (max-width: 640px){
-  .timeline{ padding-left: 28px; }
-  .timeline::before{ left: 12px; }
-  .timeline-item{ grid-template-columns: 22px 1fr; gap: 14px; }
-  .duration{ white-space: normal; }
-}
+    </div>
+  </div>
+</section>
 
 
     <!-- Education Section -->
